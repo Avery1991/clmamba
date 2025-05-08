@@ -13,7 +13,7 @@ def parse_args():
         description='MMSeg test (and eval) a model')
     parser.add_argument('--config', default=r"/mnt/e/essays/mamba/VMamba-main/segmentation/configs/vssm/upernet_vssm_4xb4-160k_ade20k-512x512_small.py",
                         help='train config file path')
-    parser.add_argument('--checkpoint', default=r"/mnt/e/essays/mamba/VMamba-main/mmsegmentation-1.2.2/tools/rs128_mamba_WHU/iter_38000.pth", help='checkpoint file')
+    parser.add_argument('--checkpoint', default, help='checkpoint file')
     parser.add_argument(
         '--work-dir',
         help=('if specified, the evaluation metric results will be dumped'
